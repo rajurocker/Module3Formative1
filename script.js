@@ -1,9 +1,29 @@
-console.log('npm-grunt'); // to check if script is working
+console.log('npm-grunt'); 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  //to check if jquery node_module is working
-  $('body').click(function(){
-    $(this).css('background','cyan');
-  });
+
+//   $('body').click(function(){
+//     $(this).css('background','cyan');
+//   });
+// });
+
+
+
+
+var newsContainer = document.getElementById("news-info")
+var btn = document.getElementById("btn");
+
+btn.addEventListener("click", function(){
+	var ourRequest = new XMLHttpRequest();
+	OurRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json')
+	ourRequest.onload = function() {
+		var ourData = JSON.parse(ourRequest.responseText);
+		renderHTML(ourData);
+	}
+	ourRequest.sent();
 });
+
+function renderHTML(data) {
+	newsContainer.inserAdjacentHTML('beforeend', 'testing 123');
+}

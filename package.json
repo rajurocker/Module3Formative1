@@ -1,25 +1,24 @@
 {
   "name": "module3formative1",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@popperjs/core": "^2.0.6",
-    "bootstrap": "^4.4.1",
-    "grunt": "^1.0.4"
-  },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rajurocker/Module3Formative1.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/rajurocker/Module3Formative1/issues"
   },
   "homepage": "https://github.com/rajurocker/Module3Formative1#readme",
-  "description": ""
+  "dependencies": {
+    "@popperjs/core": "^2.0.6",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  }
 }
