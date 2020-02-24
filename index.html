@@ -9,15 +9,27 @@
 </head>
 <body>
 
+	<div class="row my-5 px-2 bg-light">
+	    <select id="endpoints" class="col mr-5 mt-3 mb-3 bg-info text-light" name="endpoints">
+	      <option value="au">Australia</option>
+	      <option value="co">Colombia</option>
+	      <option value="in">India</option>
+	      <option value="nz">New Zealand</option>
+	      <!-- <option value="collections">Collections</option>
+	      <option value="photos">Photos</option>
+	      <option value="users">Users</option> -->
+	    </select>
 
-	<header class="jumbotron">
-	<h1 class="text-primary"> news api stuff </h1>
-	<button id="btn" class="click text-success">Click</button>
-	</header>
 
 
+			<button id="submit" type="button" class="col mt-3 btn btn-primary btn-lg text-light">View Article List</button>
+		    </div>
 
-	<div id="news-info"></div>
+	<div id="result">
+
+	</div>
+
+
 
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/@popperjs/core/dist/umd/popper.min.js">  </script>
@@ -25,6 +37,12 @@
 
 	<!-- <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"> </script> -->
 
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
 	<script src="js/script.js"></script>
+	<script src="js/config.json"></script>
 </body>
 </html>
